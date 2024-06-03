@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>人事管理系統</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>人事管理系統</h1>
+    <div id="employee-form">
+        <h2>新增員工</h2>
+        <form id="form">
+            <label for="name">姓名：</label>
+            <input type="text" id="name" required>
+            <label for="age">年齡：</label>
+            <input type="number" id="age" required>
+            <label for="position">職位：</label>
+            <input type="text" id="position" required>
+            <button type="submit">新增</button>
+        </form>
+    </div>
+    <div id="employee-list">
+        <h2>員工列表</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>姓名</th>
+                    <th>年齡</th>
+                    <th>職位</th>
+                    <th>操作</th>
+                </tr>
+            </thead>
+            <tbody id="list">
+                <!-- 員工資料會動態生成 -->
+            </tbody>
+        </table>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
+
